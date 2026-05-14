@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز كتاب هدم النسخة القديمة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --primary-color: #ffd700;
+            --secondary-color: #25d366;
+            --text-color: #ffffff;
+            --input-bg: rgba(255, 255, 255, 0.08);
+            --accent-blue: #0084ff;
+        }
+
+        body {
+            margin: 0; padding: 0; font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background-attachment: fixed; color: var(--text-color);
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+        }
+
+        .container {
+            width: 92%; max-width: 500px; margin: 40px auto;
+            background: var(--glass-bg); backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px); border: 1px solid var(--glass-border);
+            border-radius: 25px; padding: 30px; box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* تنسيق الصورة لتظهر بوضوح */
+        .book-img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid var(--glass-border);
+        }
+
+        h1 { color: var(--primary-color); margin-bottom: 5px; font-size: 1.6rem; }
+        .author-name { font-size: 1.1rem; margin-bottom: 15px; opacity: 0.9; }
+
+        .promo-text { text-align: right; font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px; }
+        
+        .features-list { 
+            background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 15px; 
+            text-align: right; margin-bottom: 20px; border-right: 4px solid var(--primary-color);
+        }
+
+        .offer-box {
+            background: rgba(255, 215, 0, 0.15); padding: 15px; border-radius: 12px;
+            margin: 20px 0; border: 1px dashed var(--primary-color); font-weight: bold;
+        }
+
+        .form-group { text-align: right; margin-bottom: 15px; }
+        label { display: block; margin-bottom: 8px; font-size: 0.9rem; color: var(--primary-color); }
+        input {
+            width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--glass-border);
+            background: var(--input-bg); color: white; font-family: 'Cairo'; box-sizing: border-box; outline: none;
+        }
+
+        .quantity-section {
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(255, 255, 255, 0.05); padding: 10px 15px; border-radius: 12px; margin-bottom: 20px;
+        }
+
+        .qty-btn { background: var(--primary-color); border: none; width: 32px; height: 32px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+        .btn-submit {
+            display: block; width: 100%; background: var(--secondary-color); color: white;
+            padding: 15px; border-radius: 12px; text-decoration: none; font-weight: bold;
+            font-size: 1.2rem; transition: 0.3s; border: none; cursor: pointer;
+        }
+
+        .social-links { margin-top: 25px; display: flex; flex-direction: column; gap: 10px; }
+        .social-btn {
+            padding: 10px; border-radius: 10px; text-decoration: none; color: white;
+            font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 10px;
+            transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .btn-wa-channel { background: rgba(37, 211, 102, 0.15); border-color: var(--secondary-color); }
+        .btn-fb { background: rgba(0, 132, 255, 0.15); border-color: var(--accent-blue); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://files.catbox.moe/7v3er8.jpg" alt="كتاب هدم النسخة القديمة" class="book-img">
+        
+        <p style="font-weight: bold;">بدأنا حجز كتاب 🥰🥰💫</p>
+        <h1>#هدم_النسخة_القديمة</h1>
+        <p class="author-name">للكاتب / محمود أحمد حلمي</p>
+
+        <div class="promo-text">
+            🥰 ابتسم.. النسخة الأجمل منك على وشك الظهور! ✨<br>
+            حان الوقت لتهدم كل ما يعيقك وتتبنى "هندسة نفسية" جديدة كلياً.<br>
+            كتاب📚 <b>#هدم_النسخة_القديمة</b> هو تذكرتك لرحلة التغيير الجذري التي تدمج بين علم الأعصاب (Neuroscience) والعلاج المعرفي السلوكي (CBT).
+        </div>
+
+        <div class="features-list">
+            <b>ماذا ينتظرك داخل الكتاب؟</b><br>
+            ✅ <b>فن الهدم المبدع:</b> كسر العادات السلبية بذكاء.<br>
+            ✅ <b>بروتوكول القوة:</b> تصميم "النسخة الأقوى" من شخصيتك.<br>
+            ✅ <b>السعادة المستدامة:</b> تغيير حقيقي يدوم.
+        </div>
+
+        <div class="offer-box">
+            🎁 هدايا البهجة:<br>
+            • خصم 50% لأول دفعة!<br>
+            • كتابين بـ 250 ج.م والثالث "هدية" 🥳
+        </div>
+
+        <div class="form-group">
+            <label>المحافظة:</label>
+            <input type="text" id="gov" placeholder="مثال: الإسكندرية">
+        </div>
+
+        <div class="form-group">
+            <label>المنطقة / الحي:</label>
+            <input type="text" id="area" placeholder="مثال: السيوف">
+        </div>
+
+        <div class="form-group">
+            <label>العنوان بالتفصيل:</label>
+            <input type="text" id="addr" placeholder="الشارع، رقم العمارة، الدور">
+        </div>
+
+        <div class="quantity-section">
+            <span>الكمية:</span>
+            <div style="display:flex; align-items:center; gap:15px;">
+                <button class="qty-btn" onclick="updateQty(-1)">-</button>
+                <b id="qty-val">2</b>
+                <button class="qty-btn" onclick="updateQty(1)">+</button>
+            </div>
+        </div>
+
+        <button onclick="sendOrder()" class="btn-submit">تأكيد الحجز (واتساب) ✅</button>
+
+        <div class="social-links">
+            <a href="https://whatsapp.com/channel/0029Vb6xQutJf05jSPOcwR1n" target="_blank" class="social-btn btn-wa-channel">
+                📢 تابع قناة مهارات عقلية (واتساب)
+            </a>
+            <a href="https://www.facebook.com/share/1NbwxtaBdc/" target="_blank" class="social-btn btn-fb">
+                🔵 صفحة الكتاب على فيسبوك
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let qty = 2;
+        const myPhone = "201277087010";
+
+        function updateQty(n) {
+            qty += n;
+            if(qty < 1) qty = 1;
+            document.getElementById('qty-val').innerText = qty;
+        }
+
+        function sendOrder() {
+            const g = document.getElementById('gov').value;
+            const r = document.getElementById('area').value;
+            const a = document.getElementById('addr').value;
+
+            if(!g || !r || !a) {
+                alert("يرجى إكمال بيانات العنوان يدوياً");
+                return;
+            }
+
+            const message = 
+                `*طلب حجز من الموقع الرسمي*%0A%0A` +
+                `*الكتاب:* هدم النسخة القديمة%0A` +
+                `*الكمية:* ${qty}%0A` +
+                `*المحافظة:* ${g}%0A` +
+                `*المنطقة:* ${r}%0A` +
+                `*العنوان:* ${a}%0A%0A` +
+                `تم الطلب عبر رابط الموقع.`;
+
+            window.open(`https://wa.me/${myPhone}?text=${message}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
