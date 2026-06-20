@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+<head><meta name="author" content="عبدالرحمن محمد فوزي احمد">
+<meta name="owner" content="عبدالرحمن محمد فوزي احمد">
+<meta name="github" content="sfman25">
+
+<script>
+    (function() {
+        const allowedHosts = ['localhost', '127.0.0.1', '192.168.1.1'];
+        const currentHost = window.location.hostname.toLowerCase();
+
+        if (currentHost !== "" && !allowedHosts.includes(currentHost)) {
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.innerHTML = `
+                    <div style="position:fixed; top:0; left:0; width:100%; height:100%; background:#000; color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; z-index:999999; font-family:sans-serif; text-align:center;">
+                        <h1>خطأ في ترخيص النظام</h1>
+                        <p>لم يتم العثور على ترخيص نشط لهذا النطاق.</p>
+                        <p>تواصل مع المطور (sfman25) لتفعيل النظام.</p>
+                    </div>
+                `;
+            });
+            throw new Error("Unauthorized domain");
+        }
+    })();
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حجز كتاب هدم النسخة القديمة</title>
